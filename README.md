@@ -83,7 +83,7 @@ Let's focus our attention on the following actors in the bidding ecosystem:
 
 * Privacy Infrastructure may observe the sequence of ghost wins in real time, for each ad.
 * If an ad is validated, but has not yet produced impressions for k unique users, we call this state "preliminary validation". We assume that the bidders are not able to change their bidding behavior based on the fact that an ad has been preliminarily validated.
-    * In practice, that means the Global Validator has to detect and block bidders' attempts to learn that status by means of creating synthetic users (bots) that win auctions.
+    * In practice, that means the Privacy Infrastructure has to detect and block bidders' attempts to learn that status by means of creating synthetic users (bots) that win auctions.
 * Creative rendering is isolated and does not depend on the bidding signals, context, **time**. We rely on the fact that each time we show an ad, the same message is displayed. (For example, we don't want the message to change after preliminary validation.)
 
 ### Algorithm (proof of concept)
